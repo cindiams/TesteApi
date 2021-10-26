@@ -8,7 +8,7 @@ import org.junit.experimental.categories.Category;
 
 import static org.hamcrest.Matchers.notNullValue;
 
-public class PostAuthTest extends BaseTest {
+public class PostAuthTest extends BaseTest{
 
     PostAuthRequest postAuthRequest = new PostAuthRequest();
 
