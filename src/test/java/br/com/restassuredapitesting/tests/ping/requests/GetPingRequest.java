@@ -9,6 +9,6 @@ public class GetPingRequest {
         return given()
                 .header("Content-Type", "aplication/json")
                 .when()
-                .get("https://treinamento-api.herokuapp.com/ping");
+                .get("ping");
     }
 }
