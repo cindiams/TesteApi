@@ -8,6 +8,7 @@ import org.junit.runners.Suite;
 @RunWith(Categories.class)
 @Categories.IncludeCategory(br.com.restassuredapitesting.suites.SecurityTests.class)
 @Suite.SuiteClasses({
+
         PutBookingTest.class
 })
 public class SecurityTests {

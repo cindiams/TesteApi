@@ -1,8 +1,7 @@
 package br.com.restassuredapitesting.tests.booking.tests;
 
 import br.com.restassuredapitesting.base.BaseTest;
-import br.com.restassuredapitesting.runners.SmokeTests;
-import br.com.restassuredapitesting.suites.AcceptanceTests;
+import br.com.restassuredapitesting.runners.AllTests;
 import br.com.restassuredapitesting.tests.auth.requests.PostAuthRequest;
 import br.com.restassuredapitesting.tests.booking.requests.DeleteBookingRequest;
 import br.com.restassuredapitesting.tests.booking.requests.GetBookingRequest;
@@ -21,7 +20,7 @@ public class DeleteBookingTest extends BaseTest {
 
     @Test
     @Severity(SeverityLevel.BLOCKER)
-    @Category({SmokeTests.class})
+    @Category({AllTests.class})
     @DisplayName("Excluir uma Reserva utilizando um token válido")
     public void testeDeleteBooking() {
         int primeiroId = getBookingRequest.bookingReturnIds()
@@ -37,7 +36,7 @@ public class DeleteBookingTest extends BaseTest {
 
     @Test
     @Severity(SeverityLevel.NORMAL)
-    @Category({AcceptanceTests.class})
+    @Category({AllTests.class})
     @DisplayName("Excluir uma Reserva não existente")
     public void testDeleteANonExistentBooking() {
         int primeiroId = 9999;
@@ -48,9 +47,10 @@ public class DeleteBookingTest extends BaseTest {
 
     @Test
     @Severity(SeverityLevel.BLOCKER)
-    @Category({AcceptanceTests.class})
+    @Category({AllTests.class})
     @DisplayName("Excluir uma Reserva sem autorização")
     public void testDeleteAnUnauthorizedBooking() {
+
         int primeiroId = getBookingRequest.bookingReturnIds()
                 .then()
                 .statusCode(200)
