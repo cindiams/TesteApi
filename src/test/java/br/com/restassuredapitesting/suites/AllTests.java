@@ -1,4 +1,4 @@
 package br.com.restassuredapitesting.suites;
 
-public class AllTests {
+public interface AllTests {
 }
