@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: br.com.restassuredapitesting.runners.SecurityTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in br.com.restassuredapitesting.runners.SecurityTests
+initializationError(br.com.restassuredapitesting.runners.SecurityTests)  Time elapsed: 0 s  <<< ERROR!
+org.junit.runner.manipulation.NoTestsRemainException
+

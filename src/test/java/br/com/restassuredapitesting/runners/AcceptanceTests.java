@@ -7,10 +7,7 @@ import org.junit.runners.Suite;
 @RunWith(Categories.class)
 @Categories.IncludeCategory(br.com.restassuredapitesting.suites.AcceptanceTests.class)
 @Suite.SuiteClasses({
-
         AcceptanceTests.class
 })
-
-
 public class AcceptanceTests {
 }

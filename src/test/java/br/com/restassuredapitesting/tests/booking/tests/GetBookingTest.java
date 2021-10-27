@@ -32,7 +32,6 @@ public class GetBookingTest extends BaseTest {
                 .then()
                 .statusCode(200)
                 .body("size()", greaterThan(0));
-
     }
 
     @Test

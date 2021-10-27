@@ -1,0 +1,4 @@
+package br.com.restassuredapitesting.tests.booking.requests;
+
+public class DeleteBookingRequest {
+}

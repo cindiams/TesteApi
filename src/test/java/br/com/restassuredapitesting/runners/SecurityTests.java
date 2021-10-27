@@ -9,6 +9,5 @@ import org.junit.runners.Suite;
 @Suite.SuiteClasses({
         SecurityTests.class
 })
-
 public class SecurityTests {
 }
