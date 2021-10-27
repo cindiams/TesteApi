@@ -11,7 +11,5 @@ import org.junit.runners.Suite;
 
         GetBookingTest.class
 })
-
 public class ContractTests {
-
 }
