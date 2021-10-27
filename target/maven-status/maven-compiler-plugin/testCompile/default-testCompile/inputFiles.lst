@@ -1,5 +1,3 @@
-C:\Users\cindi\Desktop\restassuredapitesting\src\test\java\br\com\restassuredapitesting\runners\AcceptanceTests.java
-C:\Users\cindi\Desktop\restassuredapitesting\src\test\java\br\com\restassuredapitesting\suites\AcceptanceTests.java
 C:\Users\cindi\Desktop\restassuredapitesting\src\test\java\br\com\restassuredapitesting\tests\auth\requests\PostAuthRequest.java
 C:\Users\cindi\Desktop\restassuredapitesting\src\test\java\br\com\restassuredapitesting\tests\booking\tests\DeleteBookingTest.java
 C:\Users\cindi\Desktop\restassuredapitesting\src\test\java\br\com\restassuredapitesting\tests\ping\tests\GetPingTest.java
@@ -7,7 +5,6 @@ C:\Users\cindi\Desktop\restassuredapitesting\src\test\java\br\com\restassuredapi
 C:\Users\cindi\Desktop\restassuredapitesting\src\test\java\br\com\restassuredapitesting\tests\booking\payloads\BookingPayloads.java
 C:\Users\cindi\Desktop\restassuredapitesting\src\test\java\br\com\restassuredapitesting\runners\ContractTests.java
 C:\Users\cindi\Desktop\restassuredapitesting\src\test\java\br\com\restassuredapitesting\tests\booking\requests\DeleteBookingRequest.java
-C:\Users\cindi\Desktop\restassuredapitesting\src\test\java\br\com\restassuredapitesting\suites\SecurityTests.java
 C:\Users\cindi\Desktop\restassuredapitesting\src\test\java\br\com\restassuredapitesting\tests\ping\requests\GetPingRequest.java
 C:\Users\cindi\Desktop\restassuredapitesting\src\test\java\br\com\restassuredapitesting\suites\ContractTests.java
 C:\Users\cindi\Desktop\restassuredapitesting\src\test\java\br\com\restassuredapitesting\tests\auth\tests\PostAuthTest.java
@@ -20,5 +17,6 @@ C:\Users\cindi\Desktop\restassuredapitesting\src\test\java\br\com\restassuredapi
 C:\Users\cindi\Desktop\restassuredapitesting\src\test\java\br\com\restassuredapitesting\runners\AllTests.java
 C:\Users\cindi\Desktop\restassuredapitesting\src\test\java\br\com\restassuredapitesting\base\BaseTest.java
 C:\Users\cindi\Desktop\restassuredapitesting\src\test\java\br\com\restassuredapitesting\suites\SmokeTests.java
+C:\Users\cindi\Desktop\restassuredapitesting\src\test\java\br\com\restassuredapitesting\tests\booking\requests\PostBookingRequest.java
 C:\Users\cindi\Desktop\restassuredapitesting\src\test\java\br\com\restassuredapitesting\tests\auth\requests\payloads\AuthPayloads.java
-C:\Users\cindi\Desktop\restassuredapitesting\src\test\java\br\com\restassuredapitesting\runners\SecurityTests.java
+C:\Users\cindi\Desktop\restassuredapitesting\src\test\java\br\com\restassuredapitesting\tests\booking\tests\PostBookingTest.java

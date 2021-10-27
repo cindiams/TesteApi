@@ -19,7 +19,7 @@ public class PostAuthTest extends BaseTest{
 
     @Test
     @Severity(SeverityLevel.BLOCKER)
-    @Category({AllTests.class, SmokeTests.class})
+    @Category({SmokeTests.class, AllTests.class})
     @DisplayName("Valida o retorno de Token para o usuário")
     public void validaRetornoDeTokenParaUsuario(){
         postAuthRequest.tokenReturn()

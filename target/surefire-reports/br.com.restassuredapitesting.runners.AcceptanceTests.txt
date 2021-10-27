@@ -1,7 +1,0 @@
--------------------------------------------------------------------------------
-Test set: br.com.restassuredapitesting.runners.AcceptanceTests
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.918 s <<< FAILURE! - in br.com.restassuredapitesting.runners.AcceptanceTests
-initializationError(br.com.restassuredapitesting.runners.AcceptanceTests)  Time elapsed: 1.419 s  <<< ERROR!
-org.junit.runner.manipulation.NoTestsRemainException
-
