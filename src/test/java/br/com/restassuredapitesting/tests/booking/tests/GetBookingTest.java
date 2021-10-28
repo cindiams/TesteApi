@@ -17,6 +17,7 @@ import java.io.File;
 
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema;
 import static org.hamcrest.Matchers.greaterThan;
+import static org.hamcrest.Matchers.notNullValue;
 
 @Feature("Retorno de Reservas")
 public class GetBookingTest extends BaseTest {
@@ -25,7 +26,7 @@ public class GetBookingTest extends BaseTest {
 
     @Test
     @Severity(SeverityLevel.BLOCKER)
-    @Category({AllTests.class,SmokeTests.class})
+    @Category({AllTests.class, SmokeTests.class})
     @DisplayName("Listar Ids de Reservas")
     public void validaListagemDeIdsDasReservas() {
 
@@ -37,7 +38,7 @@ public class GetBookingTest extends BaseTest {
 
     @Test
     @Severity(SeverityLevel.BLOCKER)
-    @Category({AllTests.class,ContractTests.class})
+    @Category({AllTests.class, ContractTests.class})
     @DisplayName("Garantir o schema de retorno da Listagem de Reservas ")
     public void validaSchemaDaListagemDeReservas() {
 
@@ -49,5 +50,39 @@ public class GetBookingTest extends BaseTest {
 
     }
 
+    @Test
+    @Severity(SeverityLevel.BLOCKER)
+    @Category({SmokeTests.class})
+    @DisplayName("Listar um Id de reserva utilizando o FirstName")
+    public void testSearchForAFirstName() {
+        int primeiroId = getBookingRequest.bookingReturnIds()
+                .then()
+                .statusCode(200)
+                .extract()
+                .path("[0].bookingid");
 
+        getBookingRequest.testSearchForASpecificId(primeiroId)
+                .then()
+                .body("size()", greaterThan(0))
+                .body("firstname", notNullValue())
+                .statusCode(200);
+    }
+
+    @Test
+    @Severity(SeverityLevel.BLOCKER)
+    @Category({SmokeTests.class})
+    @DisplayName("Listar um Id de reserva utilizando o LastName")
+    public void testSearchForALastName() {
+        int primeiroId = getBookingRequest.bookingReturnIds()
+                .then()
+                .statusCode(200)
+                .extract()
+                .path("[0].bookingid");
+        getBookingRequest.testSearchForASpecificId(primeiroId)
+                .then()
+                .body("size()", greaterThan(0))
+                .body("lastname", notNullValue())
+                .statusCode(200);
+
+    }
 }
